@@ -169,7 +169,7 @@ const Index = () => {
         {/* Footer */}
         <footer className="text-center border-t border-purple-500/30 pt-8">
           <p className="text-gray-400 text-lg">
-            © 2024 1popularity.com - Glow up your digital presence
+            © 2025 1popularity.com - SMM PANEL Glow up your digital presence
           </p>
           <p className="text-gray-500 text-sm mt-2">
             <a href="#" className="hover:text-purple-400 transition-colors underline">
