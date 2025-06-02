@@ -1,5 +1,5 @@
 
-import { Instagram, Youtube, MessageCircle, Twitter, Facebook, Zap, Headphones, Plug, Star, ArrowRight } from 'lucide-react';
+import { Instagram, Youtube, MessageCircle, Twitter, Facebook, Zap, Headphones, Plug, Star, ArrowRight, Music } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 
@@ -27,8 +27,16 @@ const Index = () => {
             />
           </div>
           
-          <h1 className="text-6xl md:text-8xl font-black text-transparent bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text mb-6 leading-tight font-['Orbitron']">
-            GLOW UP
+          <h1 className="text-6xl md:text-8xl font-black mb-6 leading-tight font-['Orbitron'] relative">
+            <span className="text-transparent bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text animate-pulse">
+              GLOW
+            </span>
+            <span className="text-transparent bg-gradient-to-r from-blue-400 via-pink-400 to-purple-400 bg-clip-text ml-4 neon-text">
+              UP
+            </span>
+            <div className="absolute inset-0 text-transparent bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text blur-lg opacity-50 animate-pulse">
+              GLOW UP
+            </div>
           </h1>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-4 neon-text">
             Your Social Presence
@@ -80,19 +88,28 @@ const Index = () => {
           <h3 className="text-3xl font-bold text-center text-white mb-12 neon-text">
             Supported Platforms
           </h3>
-          <div className="flex justify-center items-center gap-8 flex-wrap max-w-4xl mx-auto">
+          <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-6 max-w-6xl mx-auto">
             {[
               { icon: Instagram, name: 'Instagram', color: 'from-pink-500 to-purple-500' },
               { icon: Youtube, name: 'YouTube', color: 'from-red-500 to-red-600' },
               { icon: MessageCircle, name: 'TikTok', color: 'from-black to-pink-500' },
               { icon: Facebook, name: 'Facebook', color: 'from-blue-600 to-blue-800' },
-              { icon: Twitter, name: 'Twitter', color: 'from-blue-400 to-blue-600' }
-            ].map((platform) => (
-              <div key={platform.name} className="text-center group">
-                <div className={`w-20 h-20 mx-auto mb-4 rounded-2xl bg-gradient-to-br ${platform.color} flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-12 shadow-2xl neon-border`}>
-                  <platform.icon className="w-10 h-10 text-white" />
+              { icon: Twitter, name: 'Twitter', color: 'from-blue-400 to-blue-600' },
+              { icon: MessageCircle, name: 'Discord', color: 'from-indigo-500 to-purple-600' },
+              { icon: Music, name: 'Spotify', color: 'from-green-500 to-green-600' },
+              { icon: MessageCircle, name: 'Twitch', color: 'from-purple-500 to-purple-700' },
+              { icon: MessageCircle, name: 'Telegram', color: 'from-blue-500 to-cyan-500' },
+              { icon: MessageCircle, name: 'LinkedIn', color: 'from-blue-600 to-blue-700' },
+              { icon: MessageCircle, name: 'Threads', color: 'from-black to-gray-700' },
+              { icon: Music, name: 'SoundCloud', color: 'from-orange-500 to-orange-600' },
+              { icon: MessageCircle, name: 'WhatsApp', color: 'from-green-500 to-green-600' },
+              { icon: MessageCircle, name: 'Reddit', color: 'from-orange-600 to-red-600' }
+            ].map((platform, index) => (
+              <div key={`${platform.name}-${index}`} className="text-center group">
+                <div className={`w-16 h-16 mx-auto mb-3 rounded-2xl bg-gradient-to-br ${platform.color} flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-12 shadow-2xl neon-border`}>
+                  <platform.icon className="w-8 h-8 text-white" />
                 </div>
-                <p className="text-white font-bold text-lg">{platform.name}</p>
+                <p className="text-white font-bold text-sm">{platform.name}</p>
               </div>
             ))}
           </div>
@@ -123,12 +140,21 @@ const Index = () => {
         {/* Payment Methods */}
         <section className="mb-16">
           <h3 className="text-2xl font-bold text-white text-center mb-8">Payment Methods</h3>
-          <div className="flex flex-wrap justify-center items-center gap-4 max-w-4xl mx-auto">
-            {['Payoneer', 'Coinbase', 'Perfect Money', 'Credit Card'].map((payment) => (
-              <div key={payment} className="bg-black/40 backdrop-blur-xl px-6 py-3 rounded-xl border border-purple-500/30 hover:border-pink-500/50 transition-all duration-300">
-                <span className="text-white font-semibold">{payment}</span>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-6xl mx-auto">
+            {[
+              'Cryptos', 'Payeer', 'Cryptomus', 'Binance', 'KuCoin', 'PayPal',
+              'Stripe', 'Coinpal', 'AirTM', 'Uphold', 'Wise', 'Payoneer',
+              'Coinbase', 'Perfect Money', 'Credit Card'
+            ].map((payment) => (
+              <div key={payment} className="bg-black/40 backdrop-blur-xl px-4 py-3 rounded-xl border border-purple-500/30 hover:border-pink-500/50 transition-all duration-300 text-center">
+                <span className="text-white font-semibold text-sm">{payment}</span>
               </div>
             ))}
+          </div>
+          <div className="mt-6 text-center">
+            <p className="text-gray-400 text-sm">
+              Bank transfers available in: Colombia, USA, Australia, China, Europe, United Kingdom
+            </p>
           </div>
         </section>
 
