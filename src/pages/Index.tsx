@@ -1,5 +1,5 @@
 
-import { Instagram, Youtube, MessageCircle, Twitter, Facebook, Zap, Clock, Headphones, CreditCard, Users, Star, ArrowRight } from 'lucide-react';
+import { Instagram, Youtube, MessageCircle, Twitter, Facebook, Zap, Clock, Headphones, CreditCard, Users, Star, ArrowRight, Music, Gamepad2, Send, Linkedin, Volume2, MessageSquare, UserCheck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 
@@ -15,9 +15,9 @@ const Index = () => {
         <header className="container mx-auto px-6 py-8">
           <div className="flex items-center justify-center mb-12">
             <img 
-              src="/lovable-uploads/1af61087-2190-465e-aaa6-c33e8d7fc4a9.png" 
+              src="/lovable-uploads/7f912ee6-3d25-4702-b0f9-d9fcdf711374.png" 
               alt="Popularity Logo" 
-              className="h-16 w-auto mr-4"
+              className="h-20 w-auto mr-4"
             />
           </div>
           
@@ -36,19 +36,28 @@ const Index = () => {
 
         {/* Social Media Icons Grid */}
         <section className="container mx-auto px-6 py-12">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-10 gap-6 max-w-7xl mx-auto">
             {[
               { icon: Instagram, name: 'Instagram', color: 'from-pink-500 to-purple-500' },
               { icon: Youtube, name: 'YouTube', color: 'from-red-500 to-red-600' },
               { icon: MessageCircle, name: 'TikTok', color: 'from-black to-pink-500' },
               { icon: Twitter, name: 'Twitter', color: 'from-blue-400 to-blue-600' },
-              { icon: Facebook, name: 'Facebook', color: 'from-blue-600 to-blue-800' }
+              { icon: Facebook, name: 'Facebook', color: 'from-blue-600 to-blue-800' },
+              { icon: MessageSquare, name: 'Discord', color: 'from-indigo-500 to-purple-600' },
+              { icon: Music, name: 'Spotify', color: 'from-green-500 to-green-600' },
+              { icon: Gamepad2, name: 'Twitch', color: 'from-purple-600 to-purple-700' },
+              { icon: Send, name: 'Telegram', color: 'from-blue-500 to-blue-600' },
+              { icon: Linkedin, name: 'LinkedIn', color: 'from-blue-700 to-blue-800' },
+              { icon: MessageCircle, name: 'Threads', color: 'from-black to-gray-600' },
+              { icon: Volume2, name: 'SoundCloud', color: 'from-orange-500 to-orange-600' },
+              { icon: MessageCircle, name: 'WhatsApp', color: 'from-green-600 to-green-700' },
+              { icon: UserCheck, name: 'Reddit', color: 'from-orange-600 to-red-600' }
             ].map((platform) => (
               <div key={platform.name} className="text-center group">
-                <div className={`w-20 h-20 mx-auto mb-4 rounded-2xl bg-gradient-to-br ${platform.color} flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 shadow-2xl`}>
-                  <platform.icon className="w-10 h-10 text-white" />
+                <div className={`w-16 h-16 mx-auto mb-3 rounded-xl bg-gradient-to-br ${platform.color} flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 shadow-2xl`}>
+                  <platform.icon className="w-8 h-8 text-white" />
                 </div>
-                <p className="text-white font-semibold">{platform.name}</p>
+                <p className="text-white font-semibold text-sm">{platform.name}</p>
               </div>
             ))}
           </div>
@@ -107,17 +116,33 @@ const Index = () => {
         {/* Payment Methods */}
         <section className="container mx-auto px-6 py-12">
           <h3 className="text-2xl font-bold text-white text-center mb-8">Accepted Payment Methods</h3>
-          <div className="flex flex-wrap justify-center items-center gap-8 max-w-4xl mx-auto">
+          <div className="flex flex-wrap justify-center items-center gap-4 max-w-6xl mx-auto">
             {[
+              'Cryptos',
+              'Payeer',
+              'Cryptomus',
+              'Binance',
+              'KuCoin',
+              'PayPal',
+              'Stripe',
+              'Coinpal',
+              'AirTM',
+              'Uphold',
+              'Wise',
               'Payoneer',
-              'Perfect Money', 
+              'Perfect Money',
               'Coinbase',
               'Credit Card'
             ].map((payment) => (
-              <div key={payment} className="glass-effect px-6 py-3 rounded-lg border border-purple-500/30">
-                <span className="text-white font-semibold">{payment}</span>
+              <div key={payment} className="glass-effect px-4 py-2 rounded-lg border border-purple-500/30">
+                <span className="text-white font-semibold text-sm">{payment}</span>
               </div>
             ))}
+          </div>
+          <div className="text-center mt-6">
+            <p className="text-gray-400 text-sm">
+              Bank transfers available in: Colombia, USA, Australia, China, Europe, United Kingdom
+            </p>
           </div>
         </section>
 
