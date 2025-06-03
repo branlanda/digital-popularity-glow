@@ -1,5 +1,5 @@
 
-import { Instagram, Youtube, MessageCircle, Twitter, Facebook, Zap, Headphones, Plug, Star, ArrowRight, Music } from 'lucide-react';
+import { Instagram, Youtube, MessageCircle, Twitter, Facebook, Zap, Headphones, Plug, Star, ArrowRight, Music, Shield, Clock, Globe, Users, DollarSign, CheckCircle, XCircle, Gift } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 
@@ -49,6 +49,197 @@ const Index = () => {
           </p>
         </header>
 
+        {/* Why Choose Us Section */}
+        <section className="mb-16">
+          <h3 className="text-4xl font-bold text-center text-white mb-12 neon-text">
+            ✅ Why Choose Us?
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {[
+              { icon: DollarSign, title: 'Competitive Pricing', desc: 'Services from as low as $0.03 / 1K' },
+              { icon: Zap, title: 'Fast Delivery', desc: 'Most services start instantly or within ETA' },
+              { icon: Shield, title: 'Refill Guarantee', desc: 'On eligible services (up to 30–365 days)' },
+              { icon: Plug, title: 'API Support', desc: 'Full integration & 10% API discount for BHW members' },
+              { icon: Globe, title: 'Global Reach', desc: 'Targeted followers by region & language' },
+              { icon: Headphones, title: 'Dedicated Support', desc: 'Ticket system active 18h/day' }
+            ].map((feature, index) => (
+              <Card key={index} className="bg-black/40 border-2 border-purple-500/30 p-6 backdrop-blur-xl hover:border-pink-500/50 transition-all duration-300 group">
+                <feature.icon className="w-8 h-8 text-purple-400 mb-3 group-hover:text-pink-400 transition-colors" />
+                <h4 className="text-lg font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
+                  {feature.title}
+                </h4>
+                <p className="text-gray-300 text-sm">{feature.desc}</p>
+              </Card>
+            ))}
+          </div>
+        </section>
+
+        {/* Top Services Section */}
+        <section className="mb-16">
+          <h3 className="text-4xl font-bold text-center text-white mb-12 neon-text">
+            🎯 Top Services
+          </h3>
+          <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {[
+              {
+                platform: 'Instagram',
+                icon: Instagram,
+                color: 'from-pink-500 to-purple-500',
+                services: [
+                  'EU, Spanish, Latin, Arab, Brazilian Followers — From $1.56 to $3.25 / 1K',
+                  '365 Days Refill Followers — $0.57 / 1K',
+                  'Country-targeted Likes — $0.33 / 1K',
+                  'Instant No-Drop Likes — $0.04 / 1K'
+                ]
+              },
+              {
+                platform: 'YouTube',
+                icon: Youtube,
+                color: 'from-red-500 to-red-600',
+                services: [
+                  'Ads Views (100% Real, Organic) — $1.30 / 1K',
+                  'AI-Generated Comments & Replies — From $4.20'
+                ]
+              },
+              {
+                platform: 'TikTok',
+                icon: MessageCircle,
+                color: 'from-black to-pink-500',
+                services: [
+                  'Global Followers (200K/day) — $2.645 / 1K',
+                  'Lifetime Refill Views — $0.0032 / 1K'
+                ]
+              },
+              {
+                platform: 'Twitter/X',
+                icon: Twitter,
+                color: 'from-blue-400 to-blue-600',
+                services: [
+                  'Community Members (Real Users, No Drop) — $10.16 / 1K'
+                ]
+              },
+              {
+                platform: 'Facebook',
+                icon: Facebook,
+                color: 'from-blue-600 to-blue-800',
+                services: [
+                  'Profile Followers — $0.08 / 1K',
+                  'Page Likes + Followers — $0.56 / 1K',
+                  'Custom Comments — $0.61 / 1K'
+                ]
+              }
+            ].map((platform, index) => (
+              <Card key={index} className="bg-black/40 border-2 border-purple-500/30 p-6 backdrop-blur-xl hover:border-pink-500/50 transition-all duration-300">
+                <div className="flex items-center mb-4">
+                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${platform.color} flex items-center justify-center mr-4`}>
+                    <platform.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <h4 className="text-2xl font-bold text-white">{platform.platform}</h4>
+                </div>
+                <ul className="space-y-2">
+                  {platform.services.map((service, idx) => (
+                    <li key={idx} className="text-gray-300 text-sm">• {service}</li>
+                  ))}
+                </ul>
+              </Card>
+            ))}
+          </div>
+        </section>
+
+        {/* Refund & Refill Policy */}
+        <section className="mb-16">
+          <h3 className="text-4xl font-bold text-center text-white mb-12 neon-text">
+            🔄 Refund & Refill Policy
+          </h3>
+          <div className="max-w-4xl mx-auto">
+            <Card className="bg-black/40 border-2 border-purple-500/30 p-8 backdrop-blur-xl mb-6">
+              <p className="text-gray-300 text-lg mb-6 text-center">
+                At 1Popularity.com, transparency is our promise:
+              </p>
+              
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <h4 className="text-xl font-bold text-green-400 mb-4 flex items-center">
+                    <CheckCircle className="w-6 h-6 mr-2" /> What We Guarantee
+                  </h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>✅ Refill Guarantee: If your service drops and includes refill, just open a ticket.</li>
+                    <li>✅ Undelivered Orders: If a service fails to start, you'll receive a refund to your account balance.</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 className="text-xl font-bold text-red-400 mb-4 flex items-center">
+                    <XCircle className="w-6 h-6 mr-2" /> No Refunds For
+                  </h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>❌ No refunds to wallet – Deposits are final</li>
+                    <li>❌ Orders placed to private or incorrect accounts</li>
+                    <li>❌ Orders mixed with other panels</li>
+                    <li>❌ Services marked "No Refill" or "No Guarantee"</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div className="bg-red-900/30 border border-red-500/50 rounded-lg p-4 mb-4">
+                <p className="text-red-300 text-center font-semibold">
+                  ⚠️ Opening a chargeback will result in immediate account ban and reversal of delivered services.
+                </p>
+              </div>
+              
+              <p className="text-yellow-300 text-center font-semibold">
+                📌 Reminder: "No Drop" ≠ Guaranteed refill unless stated explicitly.
+              </p>
+            </Card>
+          </div>
+        </section>
+
+        {/* BHW Exclusive Offers */}
+        <section className="mb-16">
+          <h3 className="text-4xl font-bold text-center text-white mb-12 neon-text">
+            🎁 BHW Exclusive Offers
+          </h3>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {[
+              { icon: DollarSign, title: '10% API Discount', desc: 'Contact support to activate', color: 'from-green-500 to-emerald-600' },
+              { icon: Gift, title: 'Free $1 Test Balance', desc: 'Sign up and comment your username below', color: 'from-purple-500 to-pink-500' },
+              { icon: Users, title: 'Bulk Discounts', desc: 'Contact us for private reseller deals', color: 'from-blue-500 to-cyan-500' }
+            ].map((offer, index) => (
+              <Card key={index} className="bg-black/40 border-2 border-purple-500/30 p-6 text-center backdrop-blur-xl hover:border-pink-500/50 transition-all duration-300 group">
+                <div className={`w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br ${offer.color} flex items-center justify-center transform transition-all duration-300 group-hover:scale-110`}>
+                  <offer.icon className="w-8 h-8 text-white" />
+                </div>
+                <h4 className="text-xl font-bold text-white mb-2">{offer.title}</h4>
+                <p className="text-gray-300">{offer.desc}</p>
+              </Card>
+            ))}
+          </div>
+        </section>
+
+        {/* How It Works */}
+        <section className="mb-16">
+          <h3 className="text-4xl font-bold text-center text-white mb-12 neon-text">
+            🧩 How It Works
+          </h3>
+          <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            {[
+              { step: '1', title: 'Sign Up', desc: 'Create your account at 1popularity.com/signup', icon: Users },
+              { step: '2', title: 'Add Funds', desc: 'Choose your preferred payment method', icon: DollarSign },
+              { step: '3', title: 'Select Service', desc: 'Enter link + quantity for your order', icon: MessageCircle },
+              { step: '4', title: 'Watch Results', desc: 'Most services start instantly', icon: Clock }
+            ].map((step, index) => (
+              <Card key={index} className="bg-black/40 border-2 border-purple-500/30 p-6 text-center backdrop-blur-xl hover:border-pink-500/50 transition-all duration-300 relative">
+                <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center text-white font-bold text-xl">
+                  {step.step}
+                </div>
+                <step.icon className="w-8 h-8 mx-auto mb-3 text-purple-400" />
+                <h4 className="text-lg font-bold text-white mb-2">{step.title}</h4>
+                <p className="text-gray-300 text-sm">{step.desc}</p>
+              </Card>
+            ))}
+          </div>
+        </section>
+
         {/* Features Section */}
         <section className="mb-16">
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -88,7 +279,7 @@ const Index = () => {
           <h3 className="text-3xl font-bold text-center text-white mb-12 neon-text">
             Supported Platforms
           </h3>
-          <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-6 max-w-6xl mx-auto">
             {[
               { icon: Instagram, name: 'Instagram', color: 'from-pink-500 to-purple-500' },
               { icon: Youtube, name: 'YouTube', color: 'from-red-500 to-red-600' },
@@ -139,12 +330,12 @@ const Index = () => {
 
         {/* Payment Methods */}
         <section className="mb-16">
-          <h3 className="text-2xl font-bold text-white text-center mb-8">Payment Methods</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-6xl mx-auto">
+          <h3 className="text-2xl font-bold text-white text-center mb-8">💳 Payment Methods</h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
             {[
-              'Cryptos', 'Payeer', 'Cryptomus', 'Binance', 'KuCoin', 'PayPal',
+              'Cryptos (BTC, ETH, USDT, BUSD)', 'Payeer', 'Cryptomus', 'Binance', 'KuCoin', 'PayPal',
               'Stripe', 'Coinpal', 'AirTM', 'Uphold', 'Wise', 'Payoneer',
-              'Coinbase', 'Perfect Money', 'Credit Card'
+              'Coinbase', 'Perfect Money', 'Credit/Debit Cards', 'WebMoney', 'Cashmaal'
             ].map((payment) => (
               <div key={payment} className="bg-black/40 backdrop-blur-xl px-4 py-3 rounded-xl border border-purple-500/30 hover:border-pink-500/50 transition-all duration-300 text-center">
                 <span className="text-white font-semibold text-sm">{payment}</span>
@@ -158,12 +349,37 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Contact Section */}
+        <section className="mb-16">
+          <h3 className="text-3xl font-bold text-center text-white mb-8 neon-text">
+            📬 Contact Us
+          </h3>
+          <div className="text-center max-w-2xl mx-auto">
+            <Card className="bg-black/40 border-2 border-purple-500/30 p-8 backdrop-blur-xl">
+              <div className="space-y-4 text-gray-300">
+                <p>🌐 Website: <span className="text-purple-400 font-semibold">https://1popularity.com</span></p>
+                <p>📨 Support: Available via ticket system 18h/day</p>
+                <p>🛠️ API: Available in your dashboard with documentation</p>
+              </div>
+            </Card>
+          </div>
+        </section>
+
         {/* Call to Action */}
         <section className="text-center mb-16">
+          <h3 className="text-3xl font-bold text-white mb-6 neon-text">
+            🌟 Ready to grow your brand or reseller business?
+          </h3>
+          <p className="text-xl text-gray-300 mb-8">
+            Join 1Popularity.com today – Experience quality, speed, and honest service.
+          </p>
           <Button className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 hover:from-purple-700 hover:via-pink-700 hover:to-blue-700 text-white text-2xl px-16 py-8 rounded-2xl font-bold transform transition-all duration-300 hover:scale-105 neon-border border-2 border-purple-500 group shadow-2xl">
             Start Growing Now
             <ArrowRight className="w-8 h-8 ml-3 group-hover:translate-x-2 transition-transform" />
           </Button>
+          <p className="text-purple-300 mt-4 text-lg">
+            Sign up now and comment your username below to get your test balance!
+          </p>
         </section>
 
         {/* Footer */}
