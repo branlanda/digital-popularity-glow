@@ -86,12 +86,12 @@ const Index = () => {
                 icon: Instagram,
                 color: 'from-pink-500 to-purple-500',
                 services: [
-                  'Instagram Views  — $0.003 / 1K',
                   'EU, Spanish, Latin, Arab, Brazilian Followers — From $2.66 / 1K',
+                   'Instagram Views — $0.003 / 1K',
                   '365 Days Refill Followers — $1.64 / 1K',
-                  'Country-targeted Likes — $0.03 / 1K',
-                  'Instant No-Drop Likes — $0.02 / 1K',
-                  'Instant No-refill follows  — $0.99 / 1K'
+                  'Country-targeted Likes — $0.27 / 1K',
+                  'Instant No-Drop Likes — $0.03 / 1K'
+                  
                 ]
               },
               {
@@ -99,7 +99,8 @@ const Index = () => {
                 icon: Youtube,
                 color: 'from-red-500 to-red-600',
                 services: [
-                  'YouTube Views [ 30 Days Guaranteed ♻️ ]— $1.19 / 1K',
+                  'Ads Views (100% Real, Organic) — $1.19 / 1K',
+                    'Youtube WatchTime [5 Minutes+ Video] — From $9.75'
                   'Youtube Likes — From $0.08'
                 ]
               },
@@ -108,8 +109,16 @@ const Index = () => {
                 icon: MessageCircle,
                 color: 'from-black to-pink-500',
                 services: [
-                  'Global Followers  — $1.63 / 1K',
-                  'Lifetime Refill Views — $0.001 / 1K'
+                  'Global Followers (200K/day) — $2.645 / 1K',
+                  'Lifetime Refill Views — $0.0032 / 1K'
+                ]
+              },
+              {
+                platform: 'Twitter/X',
+                icon: Twitter,
+                color: 'from-blue-400 to-blue-600',
+                services: [
+                  'Community Members (Real Users, No Drop) — $10.16 / 1K'
                 ]
               },
               {
@@ -117,8 +126,9 @@ const Index = () => {
                 icon: Facebook,
                 color: 'from-blue-600 to-blue-800',
                 services: [
-                  'Profile Followers — $0.75 / 1K',
-                  'Page Likes + Followers — $2.65 / 1K',
+                  'Profile Followers — $0.08 / 1K',
+                  'Page Likes + Followers — $0.56 / 1K',
+                  'Custom Comments — $0.61 / 1K'
                 ]
               }
             ].map((platform, index) => (
