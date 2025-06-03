@@ -86,13 +86,12 @@ const Index = () => {
                 icon: Instagram,
                 color: 'from-pink-500 to-purple-500',
                 services: [
-                  'Instagram Views  — $0.003 / 1K'.
+                  'Instagram Views  — $0.003 / 1K',
                   'EU, Spanish, Latin, Arab, Brazilian Followers — From $2.66 / 1K',
                   '365 Days Refill Followers — $1.64 / 1K',
                   'Country-targeted Likes — $0.03 / 1K',
                   'Instant No-Drop Likes — $0.02 / 1K',
                   'Instant No-refill follows  — $0.99 / 1K'
-                  
                 ]
               },
               {
