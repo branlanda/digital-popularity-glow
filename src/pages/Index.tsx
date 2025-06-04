@@ -136,17 +136,6 @@ const Index = () => {
                   'Custom Comments — $28.044 / 1K',
                    'Facebook Video/Reels Views — $0.002 / 1K'
                 ]
-              },
-              {
-                platform: 'Spotify',
-                icon: Music,
-                color: 'from-blue-600 to-blue-800',
-                services: [
-                  'Spotify Followers — $0.244 / 1K',
-                  'Spotify - 𝐅𝐑𝐄𝐄 Plays  — $0.244 / 1K',
-                  'Spotify - Plays ~ 𝐏𝐑𝐄𝐌𝐈𝐔𝐌  — $0.641 / 1K',
-                   'Spotify - Targeted  Plays — $0.002 / 1K'
-                ]
               }
             ].map((platform, index) => (
               <Card key={index} className="bg-black/40 border-2 border-purple-500/30 p-6 backdrop-blur-xl hover:border-pink-500/50 transition-all duration-300">
@@ -209,7 +198,7 @@ const Index = () => {
               </div>
               
               <p className="text-yellow-300 text-center font-semibold">
-                📌 Reminder: "No Drop" ≠ Guaranteed refill unless stated explicitly.
+          
               </p>
             </Card>
           </div>
