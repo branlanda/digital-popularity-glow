@@ -1,3 +1,4 @@
+
 import { Instagram, Youtube, MessageCircle, Twitter, Facebook, Zap, Headphones, Plug, Star, ArrowRight, Music, Shield, Clock, Globe, Users, DollarSign, CheckCircle, XCircle, Gift } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -356,7 +357,7 @@ const Index = () => {
             {[
               'Cryptos (BTC, ETH, USDT, BUSD)', 'Payeer', 'Cryptomus', 'Binance', 'KuCoin', 'PayPal',
               'Stripe', 'Coinpal', 'AirTM', 'Uphold', 'Wise', 'Payoneer',
-              'Coinbase', 'Perfect Money', 'Credit/Debit Cards', 'WebMoney', 'Cashmaal'
+              'Coinbase', 'Credit/Debit Cards', 'WebMoney', 'Cashmaal'
             ].map((payment) => (
               <div key={payment} className="bg-black/40 backdrop-blur-xl px-4 py-3 rounded-xl border border-purple-500/30 hover:border-pink-500/50 transition-all duration-300 text-center">
                 <span className="text-white font-semibold text-sm">{payment}</span>
@@ -365,7 +366,7 @@ const Index = () => {
           </div>
           <div className="mt-6 text-center">
             <p className="text-gray-400 text-sm">
-              Bank transfers available in: Colombia, USA, Australia, China, Europe, United Kingdom
+              Bank transfers available in: Colombia, USA, Australia, China, Europe, United Kingdom, Turkey
             </p>
           </div>
         </section>
