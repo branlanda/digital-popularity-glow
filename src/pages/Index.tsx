@@ -126,7 +126,7 @@ const Index = () => {
                   
                 ]
               },
-                    {
+              {
                 platform: 'Facebook',
                 icon: Facebook,
                 color: 'from-blue-600 to-blue-800',
@@ -139,7 +139,7 @@ const Index = () => {
               },
               {
                 platform: 'Spotify',
-                icon: Spotify,
+                icon: Music,
                 color: 'from-blue-600 to-blue-800',
                 services: [
                   'Spotify Followers — $0.244 / 1K',
