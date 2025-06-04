@@ -136,6 +136,17 @@ const Index = () => {
                   'Custom Comments — $28.044 / 1K',
                    'Facebook Video/Reels Views — $0.002 / 1K'
                 ]
+              },
+              {
+                platform: 'Spotify',
+                icon: Music,
+                color: 'from-blue-600 to-blue-800',
+                services: [
+                  'Spotify Followers — $0.244 / 1K',
+                  'Spotify - 𝐅𝐑𝐄𝐄 Plays  — $0.244 / 1K',
+                  'Spotify - Plays ~ 𝐏𝐑𝐄𝐌𝐈𝐔𝐌  — $0.641 / 1K',
+                   'Spotify - Targeted  Plays — $0.002 / 1K'
+                ]
               }
             ].map((platform, index) => (
               <Card key={index} className="bg-black/40 border-2 border-purple-500/30 p-6 backdrop-blur-xl hover:border-pink-500/50 transition-all duration-300">
@@ -211,7 +222,7 @@ const Index = () => {
           </h3>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
-              { icon: DollarSign, title: 'API Services', desc: 'Api/Documentation/Api Key Services', color: 'from-green-500 to-emerald-600' },
+              { icon: DollarSign, title: '10% API Discount', desc: 'Contact support to activate', color: 'from-green-500 to-emerald-600' },
               { icon: Gift, title: 'Free $1 Test Balance', desc: 'Sign up and comment your username below', color: 'from-purple-500 to-pink-500' },
               { icon: Users, title: 'Bulk Discounts', desc: 'Contact us for private reseller deals', color: 'from-blue-500 to-cyan-500' }
             ].map((offer, index) => (
