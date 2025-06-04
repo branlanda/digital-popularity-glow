@@ -45,23 +45,23 @@ const Index = () => {
             with 1popularity.com
           </p>
           <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            Trusted SMM services. Cheap, fast, and scalable for all platforms.
+            A platform offering scalable and responsive SMM solutions for creators, businesses, and resellers.
           </p>
         </header>
 
         {/* Why Choose Us Section */}
         <section className="mb-16">
           <h3 className="text-4xl font-bold text-center text-white mb-12 neon-text">
-            ✅ Why Choose Us?
+            🎯 Why Choose 1Popularity.com?
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {[
-              { icon: DollarSign, title: 'Competitive Pricing', desc: 'Services from as low as $0.001 / 1K' },
-              { icon: Zap, title: 'Fast Delivery', desc: 'Most services start instantly or within ETA' },
-              { icon: Shield, title: 'Refill Guarantee', desc: 'On eligible services (up to 30–365 days)' },
-              { icon: Plug, title: 'API Support', desc: 'Full integration API and discount for BHW members' },
-              { icon: Globe, title: 'Global Reach', desc: 'Targeted followers by region & language' },
-              { icon: Headphones, title: 'Dedicated Support', desc: 'Ticket system active 18h/day' }
+              { icon: DollarSign, title: 'Competitive Pricing', desc: 'Pricing starts from $0.001 per 1K' },
+              { icon: Zap, title: 'Fast Delivery', desc: 'Most services start within minutes' },
+              { icon: Shield, title: 'Refill Guarantee', desc: 'Refill eligible (30–365 days) on selected services' },
+              { icon: Plug, title: 'API Support', desc: 'API support with discounts for BHW resellers' },
+              { icon: Globe, title: 'Global Reach', desc: 'Targeted traffic by language and country' },
+              { icon: Headphones, title: 'Dedicated Support', desc: 'Ticket-based support system available 18h/day' }
             ].map((feature, index) => (
               <Card key={index} className="bg-black/40 border-2 border-purple-500/30 p-6 backdrop-blur-xl hover:border-pink-500/50 transition-all duration-300 group">
                 <feature.icon className="w-8 h-8 text-purple-400 mb-3 group-hover:text-pink-400 transition-colors" />
@@ -77,7 +77,7 @@ const Index = () => {
         {/* Top Services Section */}
         <section className="mb-16">
           <h3 className="text-4xl font-bold text-center text-white mb-12 neon-text">
-            🎯 Top Services
+            🚀 Top Services
           </h3>
           <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {[
@@ -86,12 +86,10 @@ const Index = () => {
                 icon: Instagram,
                 color: 'from-pink-500 to-purple-500',
                 services: [
-                  'EU, Spanish, Latin, Arab, Brazilian Followers — From $2.66 / 1K',
-                   'Instagram Views — $0.003 / 1K',
-                  '365 Days Refill Followers — $1.64 / 1K',
-                  'Country-targeted Likes — $0.27 / 1K',
-                  'Instant No-Drop Likes — $0.03 / 1K'
-                  
+                  'Country-Targeted Followers (EU, LATAM, Arab, BR, etc.) – from $2.66 / 1K',
+                  'Views – from $0.003 / 1K',
+                  'Long-Term Refill Followers – $1.64 / 1K',
+                  'Likes (targeted & instant) – from $0.03 / 1K'
                 ]
               },
               {
@@ -99,11 +97,10 @@ const Index = () => {
                 icon: Youtube,
                 color: 'from-red-500 to-red-600',
                 services: [
-                  'Ads Views (100% Real, Organic) — $1.19 / 1K',
-                    'Youtube WatchTime [5 Minutes+ Video] — From $9.75',
-                  'Youtube Likes — From $0.08',
-                  '	YouTube Subscribers — From $	1.917'
-                  
+                  'Ads Views (Organic) – $1.19 / 1K',
+                  'WatchTime (5+ min) – from $9.75',
+                  'Likes – from $0.08',
+                  'Subscribers – from $1.91'
                 ]
               },
               {
@@ -111,8 +108,8 @@ const Index = () => {
                 icon: MessageCircle,
                 color: 'from-black to-pink-500',
                 services: [
-                  'Global Followers (200K/day) — $1.63 / 1K',
-                  'Lifetime Refill Views — $0.001 / 1K'
+                  'Global Followers (200K/day) – $1.63 / 1K',
+                  'Views (lifetime refill) – $0.001 / 1K'
                 ]
               },
               {
@@ -120,11 +117,10 @@ const Index = () => {
                 icon: Twitter,
                 color: 'from-blue-400 to-blue-600',
                 services: [
-                  'Followers — $8.155 / 1K',
-                   'Twitter Retweet — $0.959 / 1K',
-                   'Twitter Tweet Views — $0.024 / 1K',
-                   'Twitter Likes — $2.501 / 1K',
-                  
+                  'Followers – $8.15 / 1K',
+                  'Retweets – $0.95 / 1K',
+                  'Tweet Views – $0.02 / 1K',
+                  'Likes – $2.50 / 1K'
                 ]
               },
               {
@@ -132,21 +128,20 @@ const Index = () => {
                 icon: Facebook,
                 color: 'from-blue-600 to-blue-800',
                 services: [
-                  'Profile Followers — $0.751 / 1K',
-                  'Page Likes + Followers — $2.6 / 1K',
-                  'Custom Comments — $28.044 / 1K',
-                   'Facebook Video/Reels Views — $0.002 / 1K'
+                  'Profile Followers – $0.75 / 1K',
+                  'Page Likes & Follows – $2.60 / 1K',
+                  'Video Views – $0.002 / 1K',
+                  'Custom Comments – $28.04 / 1K'
                 ]
               },
               {
                 platform: 'Spotify',
                 icon: Music,
-                color: 'from-blue-600 to-blue-800',
+                color: 'from-green-500 to-green-600',
                 services: [
-                  'Spotify Followers — $0.244 / 1K',
-                  'Spotify - 𝐅𝐑𝐄𝐄 Plays  — $0.244 / 1K',
-                  'Spotify - Plays ~ 𝐏𝐑𝐄𝐌𝐈𝐔𝐌  — $0.641 / 1K',
-                   'Spotify - Targeted  Plays — $0.002 / 1K'
+                  'Followers – $0.24 / 1K',
+                  'Targeted Plays – $0.002 / 1K',
+                  'Premium Plays – $0.64 / 1K'
                 ]
               }
             ].map((platform, index) => (
@@ -170,7 +165,7 @@ const Index = () => {
         {/* Refund & Refill Policy */}
         <section className="mb-16">
           <h3 className="text-4xl font-bold text-center text-white mb-12 neon-text">
-            🔄 Refund & Refill Policy
+            🛡️ Refund & Refill Policy
           </h3>
           <div className="max-w-4xl mx-auto">
             <Card className="bg-black/40 border-2 border-purple-500/30 p-8 backdrop-blur-xl mb-6">
@@ -184,8 +179,8 @@ const Index = () => {
                     <CheckCircle className="w-6 h-6 mr-2" /> What We Guarantee
                   </h4>
                   <ul className="space-y-2 text-gray-300">
-                    <li>✅ Refill Guarantee: If your service drops and includes refill, just open a ticket.</li>
-                    <li>✅ Undelivered Orders: If a service fails to start, you'll receive a refund to your account balance.</li>
+                    <li>✅ Refill available on selected services with clear indication</li>
+                    <li>✅ If your order does not start, refund will be credited to your balance</li>
                   </ul>
                 </div>
                 
@@ -194,24 +189,19 @@ const Index = () => {
                     <XCircle className="w-6 h-6 mr-2" /> No Refunds For
                   </h4>
                   <ul className="space-y-2 text-gray-300">
-                    <li>❌ No refunds to wallet – Deposits are final</li>
-                    <li>❌ Orders placed to private or incorrect accounts</li>
-                    <li>❌ Orders mixed with other panels</li>
-                    <li>❌ Services marked "No Refill" or "No Guarantee"</li>
-                   <li> ❌ In the event of a major update to a social network and it affects all servers, you could even lose the server backup and warranty.</li>
+                    <li>❌ No refunds to external wallets once deposited</li>
+                    <li>❌ Orders sent to private, incorrect, or already processed URLs</li>
+                    <li>❌ Mixing our services with other panels voids refill/refund</li>
+                    <li>❌ Refunds not available on "no refill" or "no guarantee" services</li>
                   </ul>
                 </div>
               </div>
               
               <div className="bg-red-900/30 border border-red-500/50 rounded-lg p-4 mb-4">
                 <p className="text-red-300 text-center font-semibold">
-                  ⚠️ Opening a chargeback will result in immediate account ban and reversal of delivered services.
+                  ⚠️ Any chargeback results in permanent suspension
                 </p>
               </div>
-              
-              <p className="text-yellow-300 text-center font-semibold">
-                
-              </p>
             </Card>
           </div>
         </section>
@@ -219,13 +209,13 @@ const Index = () => {
         {/* BHW Exclusive Offers */}
         <section className="mb-16">
           <h3 className="text-4xl font-bold text-center text-white mb-12 neon-text">
-            🎁 BHW Exclusive Offers
+            🎁 Offers for BHW Members
           </h3>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
-              { icon: DollarSign, title: 'API Services', desc: 'Api-Documentation-Api Key Services', color: 'from-green-500 to-emerald-600' },
-              { icon: Gift, title: 'Free $1 Test Balance', desc: 'Sign up and comment your username below', color: 'from-purple-500 to-pink-500' },
-              { icon: Users, title: 'Bulk Discounts', desc: 'Contact us for private reseller deals', color: 'from-blue-500 to-cyan-500' }
+              { icon: Gift, title: 'Bonus $1 Balance', desc: 'After signup and first funding (comment username)', color: 'from-purple-500 to-pink-500' },
+              { icon: Plug, title: 'API Integration', desc: 'API integration and BHW-only discounts', color: 'from-green-500 to-emerald-600' },
+              { icon: Users, title: 'Bulk Pricing', desc: 'Bulk/reseller pricing available on request', color: 'from-blue-500 to-cyan-500' }
             ].map((offer, index) => (
               <Card key={index} className="bg-black/40 border-2 border-purple-500/30 p-6 text-center backdrop-blur-xl hover:border-pink-500/50 transition-all duration-300 group">
                 <div className={`w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br ${offer.color} flex items-center justify-center transform transition-all duration-300 group-hover:scale-110`}>
@@ -241,14 +231,14 @@ const Index = () => {
         {/* How It Works */}
         <section className="mb-16">
           <h3 className="text-4xl font-bold text-center text-white mb-12 neon-text">
-            🧩 How It Works
+            🛠️ How It Works
           </h3>
           <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {[
-              { step: '1', title: 'Sign Up', desc: 'Create your account at 1popularity.com/signup', icon: Users },
-              { step: '2', title: 'Add Funds', desc: 'Choose your preferred payment method', icon: DollarSign },
-              { step: '3', title: 'Select Service', desc: 'Enter link + quantity for your order', icon: MessageCircle },
-              { step: '4', title: 'Watch Results', desc: 'Most services start instantly', icon: Clock }
+              { step: '1', title: 'Register', desc: 'Register at https://1popularity.com/signup', icon: Users },
+              { step: '2', title: 'Add Funds', desc: 'Add funds (crypto, cards, etc.)', icon: DollarSign },
+              { step: '3', title: 'Choose Service', desc: 'Choose your service and input the link', icon: MessageCircle },
+              { step: '4', title: 'Auto Start', desc: 'Your order starts automatically', icon: Clock }
             ].map((step, index) => (
               <Card key={index} className="bg-black/40 border-2 border-purple-500/30 p-6 text-center backdrop-blur-xl hover:border-pink-500/50 transition-all duration-300 relative">
                 <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center text-white font-bold text-xl">
@@ -299,7 +289,7 @@ const Index = () => {
         {/* Platforms Section */}
         <section className="mb-16">
           <h3 className="text-3xl font-bold text-center text-white mb-12 neon-text">
-            Supported Platforms
+            📌 Platforms We Support
           </h3>
           <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-6 max-w-6xl mx-auto">
             {[
@@ -355,9 +345,9 @@ const Index = () => {
           <h3 className="text-2xl font-bold text-white text-center mb-8">💳 Payment Methods</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
             {[
-              'Cryptos (BTC, ETH, USDT, BUSD)', 'Payeer', 'Cryptomus', 'Binance', 'KuCoin', 'PayPal',
-              'Stripe', 'Coinpal', 'AirTM', 'Uphold', 'Wise', 'Payoneer',
-              'Coinbase', 'Credit/Debit Cards', 'WebMoney', 'Cashmaal'
+              'Crypto (BTC, ETH, USDT, BUSD)', 'Binance', 'Payeer', 'Cryptomus', 'Coinpal', 'AirTM',
+              'Stripe', 'WebMoney', 'PayPal', 'Credit/Debit Cards', 'Wise', 'Payoneer',
+              'Cashmaal', 'Coinbase', 'Uphold'
             ].map((payment) => (
               <div key={payment} className="bg-black/40 backdrop-blur-xl px-4 py-3 rounded-xl border border-purple-500/30 hover:border-pink-500/50 transition-all duration-300 text-center">
                 <span className="text-white font-semibold text-sm">{payment}</span>
@@ -366,7 +356,7 @@ const Index = () => {
           </div>
           <div className="mt-6 text-center">
             <p className="text-gray-400 text-sm">
-              Bank transfers available in: Colombia, USA, Australia, China, Europe, United Kingdom, Turkey
+              Bank transfers accepted from Colombia, USA, UK, Europe, Australia, Turkey & more
             </p>
           </div>
         </section>
@@ -380,13 +370,13 @@ const Index = () => {
             <Card className="bg-black/40 border-2 border-purple-500/30 p-8 backdrop-blur-xl">
               <div className="space-y-4 text-gray-300">
                 <p>🌐 Website: <span className="text-purple-400 font-semibold">https://1popularity.com</span></p>
-                <p>📨 Support: Available via ticket system 18h/day</p>
-                <p>🛠️ API: Available in your dashboard with documentation</p>
+                <p>📩 Support via ticket (18h/day)</p>
+                <p>🔧 API access from user dashboard</p>
                 <div className="border-t border-purple-500/30 pt-4 mt-6">
                   <p className="text-white font-semibold mb-3">Direct Contact:</p>
                   <div className="space-y-2">
                     <p>📱 Instagram: <span className="text-pink-400 font-semibold">@1popularityzz</span></p>
-                    <p>💬 WhatsApp: <span className="text-green-400 font-semibold">+573006361659</span> <span className="text-sm text-gray-400">(no calls, no audio messages)</span></p>
+                    <p>💬 WhatsApp: <span className="text-green-400 font-semibold">+573006361659</span> <span className="text-sm text-gray-400">(text only)</span></p>
                     <p>✈️ Telegram: <span className="text-blue-400 font-semibold">@popularity1</span></p>
                   </div>
                 </div>
@@ -398,17 +388,17 @@ const Index = () => {
         {/* Call to Action */}
         <section className="text-center mb-16">
           <h3 className="text-3xl font-bold text-white mb-6 neon-text">
-            🌟 Ready to grow your brand or reseller business?
+            ✨ Ready to scale your brand or reseller business?
           </h3>
           <p className="text-xl text-gray-300 mb-8">
-            Join 1Popularity.com today – Experience quality, speed, and honest service.
+            Visit 1Popularity.com today
           </p>
           <Button className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 hover:from-purple-700 hover:via-pink-700 hover:to-blue-700 text-white text-2xl px-16 py-8 rounded-2xl font-bold transform transition-all duration-300 hover:scale-105 neon-border border-2 border-purple-500 group shadow-2xl">
             Start Growing Now
             <ArrowRight className="w-8 h-8 ml-3 group-hover:translate-x-2 transition-transform" />
           </Button>
           <p className="text-purple-300 mt-4 text-lg">
-            Sign up now and comment your username below to get your test balance!
+            📝 Claim your $1 bonus balance by signing up and replying with your username below!
           </p>
         </section>
 
