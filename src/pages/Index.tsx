@@ -58,7 +58,7 @@ const Index = () => {
               { icon: DollarSign, title: 'Competitive Pricing', desc: 'Services from as low as $0.001 / 1K' },
               { icon: Zap, title: 'Fast Delivery', desc: 'Most services start instantly or within ETA' },
               { icon: Shield, title: 'Refill Guarantee', desc: 'On eligible services (up to 30–365 days)' },
-              { icon: Plug, title: 'API Support', desc: 'Full integration & 10% API discount for BHW members' },
+              { icon: Plug, title: 'API Support', desc: 'Full integration API and discount for BHW members' },
               { icon: Globe, title: 'Global Reach', desc: 'Targeted followers by region & language' },
               { icon: Headphones, title: 'Dedicated Support', desc: 'Ticket system active 18h/day' }
             ].map((feature, index) => (
