@@ -136,6 +136,17 @@ const Index = () => {
                   'Custom Comments — $28.044 / 1K',
                    'Facebook Video/Reels Views — $0.002 / 1K'
                 ]
+              },
+                    {
+                platform: 'Facebook',
+                icon: Facebook,
+                color: 'from-blue-600 to-blue-800',
+                services: [
+                  'Profile Followers — $0.751 / 1K',
+                  'Page Likes + Followers — $2.6 / 1K',
+                  'Custom Comments — $28.044 / 1K',
+                   'Facebook Video/Reels Views — $0.002 / 1K'
+                ]
               }
             ].map((platform, index) => (
               <Card key={index} className="bg-black/40 border-2 border-purple-500/30 p-6 backdrop-blur-xl hover:border-pink-500/50 transition-all duration-300">
@@ -186,7 +197,7 @@ const Index = () => {
                     <li>❌ Orders placed to private or incorrect accounts</li>
                     <li>❌ Orders mixed with other panels</li>
                     <li>❌ Services marked "No Refill" or "No Guarantee"</li>
-                   <li>❌In the event of a major update to a social network and it affects all servers, you could even lose the server backup and warranty.</li>
+                   <li> In the event of a major update to a social network and it affects all servers, you could even lose the server backup and warranty.</li>
                   </ul>
                 </div>
               </div>
