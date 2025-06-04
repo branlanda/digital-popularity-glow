@@ -381,6 +381,14 @@ const Index = () => {
                 <p>🌐 Website: <span className="text-purple-400 font-semibold">https://1popularity.com</span></p>
                 <p>📨 Support: Available via ticket system 18h/day</p>
                 <p>🛠️ API: Available in your dashboard with documentation</p>
+                <div className="border-t border-purple-500/30 pt-4 mt-6">
+                  <p className="text-white font-semibold mb-3">Direct Contact:</p>
+                  <div className="space-y-2">
+                    <p>📱 Instagram: <span className="text-pink-400 font-semibold">@1popularityzz</span></p>
+                    <p>💬 WhatsApp: <span className="text-green-400 font-semibold">+573006361659</span> <span className="text-sm text-gray-400">(no calls, no audio messages)</span></p>
+                    <p>✈️ Telegram: <span className="text-blue-400 font-semibold">@popularity1</span></p>
+                  </div>
+                </div>
               </div>
             </Card>
           </div>
