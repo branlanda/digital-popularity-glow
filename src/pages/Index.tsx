@@ -100,7 +100,9 @@ const Index = () => {
                 services: [
                   'Ads Views (100% Real, Organic) — $1.19 / 1K',
                     'Youtube WatchTime [5 Minutes+ Video] — From $9.75',
-                  'Youtube Likes — From $0.08'
+                  'Youtube Likes — From $0.08',
+                  '	YouTube Subscribers — From $	1.917'
+                  
                 ]
               },
               {
@@ -108,8 +110,8 @@ const Index = () => {
                 icon: MessageCircle,
                 color: 'from-black to-pink-500',
                 services: [
-                  'Global Followers (200K/day) — $2.645 / 1K',
-                  'Lifetime Refill Views — $0.0032 / 1K'
+                  'Global Followers (200K/day) — $1.63 / 1K',
+                  'Lifetime Refill Views — $0.001 / 1K'
                 ]
               },
               {
@@ -117,7 +119,11 @@ const Index = () => {
                 icon: Twitter,
                 color: 'from-blue-400 to-blue-600',
                 services: [
-                  'Community Members (Real Users, No Drop) — $10.16 / 1K'
+                  'Followers — $8.155 / 1K',
+                   'Twitter Retweet — $0.959 / 1K',
+                   'Twitter Tweet Views — $0.024 / 1K',
+                   'Twitter Likes — $2.501 / 1K',
+                  
                 ]
               },
               {
@@ -125,9 +131,10 @@ const Index = () => {
                 icon: Facebook,
                 color: 'from-blue-600 to-blue-800',
                 services: [
-                  'Profile Followers — $0.08 / 1K',
-                  'Page Likes + Followers — $0.56 / 1K',
-                  'Custom Comments — $0.61 / 1K'
+                  'Profile Followers — $0.751 / 1K',
+                  'Page Likes + Followers — $2.6 / 1K',
+                  'Custom Comments — $28.044 / 1K',
+                   'Facebook Video/Reels Views — $0.002 / 1K'
                 ]
               }
             ].map((platform, index) => (
@@ -179,6 +186,7 @@ const Index = () => {
                     <li>❌ Orders placed to private or incorrect accounts</li>
                     <li>❌ Orders mixed with other panels</li>
                     <li>❌ Services marked "No Refill" or "No Guarantee"</li>
+                   <li> In the event of a major update to a social network and it affects all servers, you could even lose the server backup and warranty.</li>
                   </ul>
                 </div>
               </div>
