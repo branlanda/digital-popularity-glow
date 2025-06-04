@@ -136,6 +136,18 @@ const Index = () => {
                   'Custom Comments — $28.044 / 1K',
                    'Facebook Video/Reels Views — $0.002 / 1K'
                 ]
+              },
+                    {
+                platform: 'Spotify/Spotify',
+                icon: Spotify,
+                color: 'from-blue-400 to-blue-600',
+                services: [
+                  'Spotify - 𝐅𝐑𝐄𝐄 Plays — $0.244/ 1K',
+                   'Spotify Slow Plays  — $0.387 / 1K',
+                   'Spotify Targeted Plays — $0.256 / 1K',
+                   'Spotify Followers  — $0.244/ 1K',
+                  
+                ]
               }
             ].map((platform, index) => (
               <Card key={index} className="bg-black/40 border-2 border-purple-500/30 p-6 backdrop-blur-xl hover:border-pink-500/50 transition-all duration-300">
@@ -186,7 +198,7 @@ const Index = () => {
                     <li>❌ Orders placed to private or incorrect accounts</li>
                     <li>❌ Orders mixed with other panels</li>
                     <li>❌ Services marked "No Refill" or "No Guarantee"</li>
-                   <li>❌ In the event of a major update to a social network and it affects all servers, you could even lose the server backup and warranty.</li>
+                   <li> In the event of a major update to a social network and it affects all servers, you could even lose the server backup and warranty.</li>
                   </ul>
                 </div>
               </div>
