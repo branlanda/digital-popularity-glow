@@ -198,7 +198,7 @@ const Index = () => {
               </div>
               
               <p className="text-yellow-300 text-center font-semibold">
-          
+                📌 Reminder: "No Drop" ≠ Guaranteed refill unless stated explicitly.
               </p>
             </Card>
           </div>
@@ -211,7 +211,7 @@ const Index = () => {
           </h3>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
-              { icon: DollarSign, title: '10% API Discount', desc: 'Contact support to activate', color: 'from-green-500 to-emerald-600' },
+              { icon: DollarSign, title: 'API Services', desc: 'Api/Documentation/Api Key Services', color: 'from-green-500 to-emerald-600' },
               { icon: Gift, title: 'Free $1 Test Balance', desc: 'Sign up and comment your username below', color: 'from-purple-500 to-pink-500' },
               { icon: Users, title: 'Bulk Discounts', desc: 'Contact us for private reseller deals', color: 'from-blue-500 to-cyan-500' }
             ].map((offer, index) => (
