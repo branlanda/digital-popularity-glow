@@ -127,25 +127,14 @@ const Index = () => {
                 ]
               },
               {
-                platform: 'Facebook',
-                icon: Facebook,
+                platform: 'Spotify',
+                icon: Spotify,
                 color: 'from-blue-600 to-blue-800',
                 services: [
-                  'Profile Followers — $0.751 / 1K',
-                  'Page Likes + Followers — $2.6 / 1K',
-                  'Custom Comments — $28.044 / 1K',
-                   'Facebook Video/Reels Views — $0.002 / 1K'
-                ]
-              },
-                    {
-                platform: 'Facebook',
-                icon: Facebook,
-                color: 'from-blue-600 to-blue-800',
-                services: [
-                  'Profile Followers — $0.751 / 1K',
-                  'Page Likes + Followers — $2.6 / 1K',
-                  'Custom Comments — $28.044 / 1K',
-                   'Facebook Video/Reels Views — $0.002 / 1K'
+                  'Spotify Followers — $0.244 / 1K',
+                  'Spotify - 𝐅𝐑𝐄𝐄 Plays  — $0.244 / 1K',
+                  'Spotify - Plays ~ 𝐏𝐑𝐄𝐌𝐈𝐔𝐌  — $0.641 / 1K',
+                   'Spotify - Targeted Plays — $0.256 / 1K'
                 ]
               }
             ].map((platform, index) => (
