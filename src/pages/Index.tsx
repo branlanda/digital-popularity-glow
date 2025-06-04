@@ -186,7 +186,7 @@ const Index = () => {
                     <li>❌ Orders placed to private or incorrect accounts</li>
                     <li>❌ Orders mixed with other panels</li>
                     <li>❌ Services marked "No Refill" or "No Guarantee"</li>
-                   <li> In the event of a major update to a social network and it affects all servers, you could even lose the server backup and warranty.</li>
+                   <li>❌ In the event of a major update to a social network and it affects all servers, you could even lose the server backup and warranty.</li>
                   </ul>
                 </div>
               </div>
