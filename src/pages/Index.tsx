@@ -134,7 +134,7 @@ const Index = () => {
                   'Spotify Followers — $0.244 / 1K',
                   'Spotify - 𝐅𝐑𝐄𝐄 Plays  — $0.244 / 1K',
                   'Spotify - Plays ~ 𝐏𝐑𝐄𝐌𝐈𝐔𝐌  — $0.641 / 1K',
-                   'Spotify - Targeted Plays — $0.256 / 1K'
+                   'Spotify - Targeted  Plays — $0.002 / 1K'
                 ]
               }
             ].map((platform, index) => (
