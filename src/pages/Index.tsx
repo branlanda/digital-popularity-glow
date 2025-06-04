@@ -126,6 +126,17 @@ const Index = () => {
                   
                 ]
               },
+                    {
+                platform: 'Facebook',
+                icon: Facebook,
+                color: 'from-blue-600 to-blue-800',
+                services: [
+                  'Profile Followers — $0.751 / 1K',
+                  'Page Likes + Followers — $2.6 / 1K',
+                  'Custom Comments — $28.044 / 1K',
+                   'Facebook Video/Reels Views — $0.002 / 1K'
+                ]
+              },
               {
                 platform: 'Spotify',
                 icon: Spotify,
