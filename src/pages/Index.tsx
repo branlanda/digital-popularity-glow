@@ -55,7 +55,7 @@ const Index = () => {
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {[
-              { icon: DollarSign, title: 'Competitive Pricing', desc: 'Services from as low as $0.03 / 1K' },
+              { icon: DollarSign, title: 'Competitive Pricing', desc: 'Services from as low as $0.001 / 1K' },
               { icon: Zap, title: 'Fast Delivery', desc: 'Most services start instantly or within ETA' },
               { icon: Shield, title: 'Refill Guarantee', desc: 'On eligible services (up to 30–365 days)' },
               { icon: Plug, title: 'API Support', desc: 'Full integration & 10% API discount for BHW members' },
