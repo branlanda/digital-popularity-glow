@@ -1,4 +1,3 @@
-
 import { Instagram, Youtube, MessageCircle, Twitter, Facebook, Zap, Headphones, Plug, Star, ArrowRight, Music, Shield, Clock, Globe, Users, DollarSign, CheckCircle, XCircle, Gift } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -100,7 +99,7 @@ const Index = () => {
                 color: 'from-red-500 to-red-600',
                 services: [
                   'Ads Views (100% Real, Organic) — $1.19 / 1K',
-                    'Youtube WatchTime [5 Minutes+ Video] — From $9.75'
+                    'Youtube WatchTime [5 Minutes+ Video] — From $9.75',
                   'Youtube Likes — From $0.08'
                 ]
               },
