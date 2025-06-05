@@ -27,7 +27,7 @@ const Index = () => {
             />
           </div>
           
-          <h1 className="text-7xl md:text-9xl font-black mb-8 leading-tight font-['Orbitron'] relative">
+          <h1 className="text-5xl md:text-6xl font-black mb-8 leading-tight font-['Orbitron'] relative">
             <span className="text-transparent bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text animate-pulse">
               🚀 1POPULARITY.COM
             </span>
@@ -35,10 +35,10 @@ const Index = () => {
               🚀 1POPULARITY.COM
             </div>
           </h1>
-          <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 neon-text">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 neon-text">
             Premium SMM Panel for Agencies & Resellers
           </h2>
-          <p className="text-3xl md:text-4xl font-bold text-transparent bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text mb-8">
+          <p className="text-xl md:text-2xl font-bold text-transparent bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text mb-8">
             Boost Your Social Presence – Instantly & Affordably
           </p>
         </header>
@@ -58,7 +58,7 @@ const Index = () => {
                 <h4 className="text-xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
                   {feature.title}
                 </h4>
-                <p className="text-gray-300 text-lg">{feature.desc}</p>
+                <p className="text-gray-300 text-base">{feature.desc}</p>
               </Card>
             ))}
           </div>
@@ -66,7 +66,7 @@ const Index = () => {
 
         {/* Popular Services Section */}
         <section className="mb-20">
-          <h3 className="text-5xl font-bold text-center text-white mb-16 neon-text">
+          <h3 className="text-3xl md:text-4xl font-bold text-center text-white mb-16 neon-text">
             🔝 Popular Services Include:
           </h3>
           <div className="grid lg:grid-cols-2 gap-10 max-w-7xl mx-auto">
@@ -117,11 +117,11 @@ const Index = () => {
                   <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${platform.color} flex items-center justify-center mr-5`}>
                     <platform.icon className="w-7 h-7 text-white" />
                   </div>
-                  <h4 className="text-3xl font-bold text-white">{platform.platform}</h4>
+                  <h4 className="text-2xl font-bold text-white">{platform.platform}</h4>
                 </div>
                 <ul className="space-y-3">
                   {platform.services.map((service, idx) => (
-                    <li key={idx} className="text-gray-300 text-lg">• {service}</li>
+                    <li key={idx} className="text-gray-300 text-base">• {service}</li>
                   ))}
                 </ul>
               </Card>
@@ -131,7 +131,7 @@ const Index = () => {
 
         {/* BHW Exclusive Offers */}
         <section className="mb-20">
-          <h3 className="text-5xl font-bold text-center text-white mb-16 neon-text">
+          <h3 className="text-3xl md:text-4xl font-bold text-center text-white mb-16 neon-text">
             🎁 Exclusive BHW Perks
           </h3>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -144,8 +144,8 @@ const Index = () => {
                 <div className={`w-18 h-18 mx-auto mb-5 rounded-2xl bg-gradient-to-br ${offer.color} flex items-center justify-center transform transition-all duration-300 group-hover:scale-110`}>
                   <offer.icon className="w-9 h-9 text-white" />
                 </div>
-                <h4 className="text-2xl font-bold text-white mb-3">{offer.title}</h4>
-                <p className="text-gray-300 text-lg">{offer.desc}</p>
+                <h4 className="text-xl font-bold text-white mb-3">{offer.title}</h4>
+                <p className="text-gray-300 text-base">{offer.desc}</p>
               </Card>
             ))}
           </div>
@@ -153,27 +153,27 @@ const Index = () => {
 
         {/* Refund & Refill Policy */}
         <section className="mb-20">
-          <h3 className="text-5xl font-bold text-center text-white mb-16 neon-text">
+          <h3 className="text-3xl md:text-4xl font-bold text-center text-white mb-16 neon-text">
             🛡️ Refund & Refill Policy
           </h3>
           <div className="max-w-5xl mx-auto">
             <Card className="bg-black/40 border-2 border-purple-500/30 p-10 backdrop-blur-xl mb-8">
               <div className="grid md:grid-cols-2 gap-8 mb-8">
                 <div>
-                  <h4 className="text-2xl font-bold text-green-400 mb-6 flex items-center">
+                  <h4 className="text-xl font-bold text-green-400 mb-6 flex items-center">
                     <CheckCircle className="w-7 h-7 mr-3" /> What We Guarantee
                   </h4>
-                  <ul className="space-y-3 text-gray-300 text-lg">
+                  <ul className="space-y-3 text-gray-300 text-base">
                     <li>✔ 100% refund to balance for undelivered orders</li>
                     <li>✔ Refill on eligible services clearly labeled</li>
                   </ul>
                 </div>
                 
                 <div>
-                  <h4 className="text-2xl font-bold text-red-400 mb-6 flex items-center">
+                  <h4 className="text-xl font-bold text-red-400 mb-6 flex items-center">
                     <XCircle className="w-7 h-7 mr-3" /> Limitations
                   </h4>
-                  <ul className="space-y-3 text-gray-300 text-lg">
+                  <ul className="space-y-3 text-gray-300 text-base">
                     <li>✖ No refunds on external wallets or mixed-panel orders</li>
                     <li>⚠ Chargebacks = permanent ban</li>
                   </ul>
@@ -185,7 +185,7 @@ const Index = () => {
 
         {/* Payment Methods */}
         <section className="mb-20">
-          <h3 className="text-4xl font-bold text-white text-center mb-12">💳 Payment Options</h3>
+          <h3 className="text-2xl md:text-3xl font-bold text-white text-center mb-12">💳 Payment Options</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
             {[
               'Crypto (BTC, ETH, USDT, BUSD)', 'Binance Pay', 'Payeer', 'Cryptomus', 'Coinpal', 'AirTM',
@@ -193,12 +193,12 @@ const Index = () => {
               'Cashmaal', 'Coinbase', 'Uphold'
             ].map((payment) => (
               <div key={payment} className="bg-black/40 backdrop-blur-xl px-5 py-4 rounded-xl border border-purple-500/30 hover:border-pink-500/50 transition-all duration-300 text-center">
-                <span className="text-white font-semibold text-lg">{payment}</span>
+                <span className="text-white font-semibold text-sm">{payment}</span>
               </div>
             ))}
           </div>
           <div className="mt-8 text-center">
-            <p className="text-gray-400 text-lg">
+            <p className="text-gray-400 text-base">
               Bank Transfer (US, UK, EU, AU, CO, TR...)
             </p>
           </div>
@@ -206,16 +206,16 @@ const Index = () => {
 
         {/* Contact Section */}
         <section className="mb-20">
-          <h3 className="text-4xl font-bold text-center text-white mb-12 neon-text">
+          <h3 className="text-2xl md:text-3xl font-bold text-center text-white mb-12 neon-text">
             📬 Contact Us
           </h3>
           <div className="text-center max-w-3xl mx-auto">
             <Card className="bg-black/40 border-2 border-purple-500/30 p-10 backdrop-blur-xl">
-              <div className="space-y-5 text-gray-300 text-lg">
+              <div className="space-y-5 text-gray-300 text-base">
                 <p>🌐 Website: <span className="text-purple-400 font-semibold">https://1popularity.com</span></p>
                 <p>📩 Support via ticket: 18h/day</p>
                 <div className="border-t border-purple-500/30 pt-6 mt-8">
-                  <p className="text-white font-semibold mb-4 text-xl">Direct Contact:</p>
+                  <p className="text-white font-semibold mb-4 text-lg">Direct Contact:</p>
                   <div className="space-y-3">
                     <p>✈️ Telegram: <span className="text-blue-400 font-semibold">@popularity1</span></p>
                     <p>📱 WhatsApp (Text only): <span className="text-green-400 font-semibold">+57 300 636 1659</span></p>
@@ -229,24 +229,24 @@ const Index = () => {
 
         {/* Call to Action */}
         <section className="text-center mb-20">
-          <h3 className="text-4xl font-bold text-white mb-8 neon-text">
+          <h3 className="text-2xl md:text-3xl font-bold text-white mb-8 neon-text">
             🌟 Start Scaling Your Brand or Reseller Business Today
           </h3>
-          <p className="text-2xl text-gray-300 mb-10">
+          <p className="text-lg text-gray-300 mb-10">
             Join hundreds of agencies already growing with 1Popularity.com
           </p>
-          <Button className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 hover:from-purple-700 hover:via-pink-700 hover:to-blue-700 text-white text-3xl px-20 py-10 rounded-2xl font-bold transform transition-all duration-300 hover:scale-105 neon-border border-2 border-purple-500 group shadow-2xl">
+          <Button className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 hover:from-purple-700 hover:via-pink-700 hover:to-blue-700 text-white text-xl px-16 py-8 rounded-2xl font-bold transform transition-all duration-300 hover:scale-105 neon-border border-2 border-purple-500 group shadow-2xl">
             Start Growing Now
-            <ArrowRight className="w-10 h-10 ml-4 group-hover:translate-x-2 transition-transform" />
+            <ArrowRight className="w-8 h-8 ml-4 group-hover:translate-x-2 transition-transform" />
           </Button>
         </section>
 
         {/* Footer */}
         <footer className="text-center border-t border-purple-500/30 pt-10">
-          <p className="text-gray-400 text-xl">
+          <p className="text-gray-400 text-lg">
             © 2025 1popularity.com - Premium SMM Panel
           </p>
-          <p className="text-gray-500 text-lg mt-3">
+          <p className="text-gray-500 text-base mt-3">
             <a href="#" className="hover:text-purple-400 transition-colors underline">
               Terms & Conditions
             </a>
