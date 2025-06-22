@@ -1,3 +1,4 @@
+
 import { Instagram, Youtube, MessageCircle, Twitter, Facebook, Zap, Headphones, Plug, Star, ArrowRight, Music, Shield, Clock, Globe, Users, DollarSign, CheckCircle, XCircle, Gift } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -147,19 +148,6 @@ const Index = () => {
                 <p className="text-gray-300 text-sm">{offer.desc}</p>
               </Card>
             ))}
-          </div>
-          
-          {/* Additional ForoBeta Bonus */}
-          <div className="mt-12 max-w-4xl mx-auto">
-            <Card className="bg-gradient-to-r from-purple-900/50 to-pink-900/50 border-2 border-yellow-500/50 p-8 text-center backdrop-blur-xl">
-              <div className="flex items-center justify-center mb-4">
-                <DollarSign className="w-10 h-10 text-yellow-400 mr-3" />
-                <h4 className="text-xl font-bold text-yellow-400">💰 Bonus Especial ForoBeta</h4>
-              </div>
-              <p className="text-white text-lg font-semibold">
-                Saldo del foro tiene bonus del 5% adicional en compras de más de $10
-              </p>
-            </Card>
           </div>
         </section>
 
