@@ -48,7 +48,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               { icon: DollarSign, title: '💰 Precios Líderes en la Industria', desc: 'Desde solo $0.001 por 1,000 acciones – crece inteligente, no más caro' },
-              { icon: Zap, title: '⚡ Entrega Ultra-Rápida', desc: 'La mayoría de servicios inician al instante o en pocos minutos (máx 24h)' },
+              { icon: Zap, title: '⚡ Entrega Ultra-Rápida', desc: 'La mayoría de servicios inician al instante o en pocos minutos (máx 24h - enviar ticket si ves que en 24 hrs no has visto cambios)' },
               { icon: Shield, title: '♻️ Garantía de Reposición', desc: 'Servicios elegibles respaldados por 30–365 días de protección de reposición' },
               { icon: Plug, title: '🔌 API para Revendedores', desc: 'Automatiza pedidos + obtén precios especiales a través del acceso API' },
               { icon: Globe, title: '🌍 Opciones de Segmentación Global', desc: 'Obtén seguidores reales y tráfico por país e idioma (EU, LATAM, Árabe, BR...)' }
