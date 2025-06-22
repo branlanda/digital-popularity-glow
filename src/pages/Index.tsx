@@ -136,7 +136,7 @@ const Index = () => {
           </h3>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
-              { icon: Gift, title: '✅ Saldo de Prueba $1', desc: 'Solo regístrate y comenta tu nombre de usuario', color: 'from-purple-500 to-pink-500' },
+              { icon: Gift, title: '✅ Saldo del Foro Bonus 5%', desc: 'Saldo del foro tiene bonus del 5% adicional en compras de más de 10$', color: 'from-purple-500 to-pink-500' },
               { icon: Plug, title: '✅ Descuentos API para Revendedores FB', desc: 'Precios especiales para usuarios de API', color: 'from-green-500 to-emerald-600' },
               { icon: Users, title: '✅ Precios al por Mayor bajo pedido', desc: 'Descuentos por volumen disponibles', color: 'from-blue-500 to-cyan-500' }
             ].map((offer, index) => (
@@ -154,7 +154,7 @@ const Index = () => {
         {/* Refund & Refill Policy */}
         <section className="mb-20">
           <h3 className="text-2xl md:text-3xl font-bold text-center text-white mb-16 neon-text">
-            🛡️ Política de Reembolso y Reposición
+            🛡️ Política de Reembolso y Refill
           </h3>
           <div className="max-w-5xl mx-auto">
             <Card className="bg-black/40 border-2 border-purple-500/30 p-10 backdrop-blur-xl mb-8">
@@ -164,8 +164,8 @@ const Index = () => {
                     <CheckCircle className="w-7 h-7 mr-3" /> Lo que Garantizamos
                   </h4>
                   <ul className="space-y-3 text-gray-300 text-sm">
-                    <li>✔ 100% reembolso al saldo por pedidos no entregados</li>
-                    <li>✔ Reposición en servicios elegibles claramente marcados</li>
+                    <li>✔ En caso que amerite se reembolsará pero al balance dentro de 1popularity</li>
+                    <li>✔ Refill en servicios elegibles claramente marcados</li>
                   </ul>
                 </div>
                 
@@ -174,8 +174,9 @@ const Index = () => {
                     <XCircle className="w-7 h-7 mr-3" /> Limitaciones
                   </h4>
                   <ul className="space-y-3 text-gray-300 text-sm">
-                    <li>✖ Sin reembolsos a wallets externos o pedidos de paneles mixtos</li>
-                    <li>⚠ Chargebacks = ban permanente</li>
+                    <li>✖ No aseguramos cuando usted compra en muchos paneles o usa muchos servicios para un mismo enlace ya que los contadores se alteran</li>
+                    <li>⚠ En casos de update de la red social podría perder lo invertido</li>
+                    <li>⚠ Irregularidades ajenas a nosotros: demoras o pérdidas derivadas de actualizaciones de la plataforma no son motivo de reembolso</li>
                   </ul>
                 </div>
               </div>
