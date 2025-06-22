@@ -27,7 +27,7 @@ const Index = () => {
             />
           </div>
           
-          <h1 className="text-5xl md:text-6xl font-black mb-8 leading-tight font-['Orbitron'] relative">
+          <h1 className="text-4xl md:text-5xl font-black mb-8 leading-tight font-['Orbitron'] relative">
             <span className="text-transparent bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text animate-pulse">
               🚀 1POPULARITY.COM
             </span>
@@ -35,11 +35,11 @@ const Index = () => {
               🚀 1POPULARITY.COM
             </div>
           </h1>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 neon-text">
-            Premium SMM Panel for Agencies & Resellers
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 neon-text">
+            Panel SMM Premium para Agencias y Revendedores
           </h2>
-          <p className="text-xl md:text-2xl font-bold text-transparent bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text mb-8">
-            Boost Your Social Presence – Instantly & Affordably
+          <p className="text-lg md:text-xl font-bold text-transparent bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text mb-8">
+            Potencia tu Presencia Social – Al Instante y Económico
           </p>
         </header>
 
@@ -47,18 +47,18 @@ const Index = () => {
         <section className="mb-20">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
-              { icon: DollarSign, title: '💰 Industry-Leading Prices', desc: 'From just $0.001 per 1,000 actions – grow smarter, not costlier' },
-              { icon: Zap, title: '⚡ Ultra-Fast Delivery', desc: 'Most services start instantly or within a few minutes (max 24h ETA)' },
-              { icon: Shield, title: '♻️ Refill Guarantee', desc: 'Eligible services backed by 30–365 days refill protection' },
-              { icon: Plug, title: '🔌 API for Resellers', desc: 'Automate orders + get special pricing tiers via API access' },
-              { icon: Globe, title: '🌍 Global Targeting Options', desc: 'Get real followers & traffic by country and language (EU, LATAM, Arab, BR...)' }
+              { icon: DollarSign, title: '💰 Precios Líderes en la Industria', desc: 'Desde solo $0.001 por 1,000 acciones – crece inteligente, no más caro' },
+              { icon: Zap, title: '⚡ Entrega Ultra-Rápida', desc: 'La mayoría de servicios inician al instante o en pocos minutos (máx 24h)' },
+              { icon: Shield, title: '♻️ Garantía de Reposición', desc: 'Servicios elegibles respaldados por 30–365 días de protección de reposición' },
+              { icon: Plug, title: '🔌 API para Revendedores', desc: 'Automatiza pedidos + obtén precios especiales a través del acceso API' },
+              { icon: Globe, title: '🌍 Opciones de Segmentación Global', desc: 'Obtén seguidores reales y tráfico por país e idioma (EU, LATAM, Árabe, BR...)' }
             ].map((feature, index) => (
               <Card key={index} className="bg-black/40 border-2 border-purple-500/30 p-8 backdrop-blur-xl hover:border-pink-500/50 transition-all duration-300 group">
                 <feature.icon className="w-10 h-10 text-purple-400 mb-4 group-hover:text-pink-400 transition-colors" />
-                <h4 className="text-xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
+                <h4 className="text-lg font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
                   {feature.title}
                 </h4>
-                <p className="text-gray-300 text-base">{feature.desc}</p>
+                <p className="text-gray-300 text-sm">{feature.desc}</p>
               </Card>
             ))}
           </div>
@@ -66,8 +66,8 @@ const Index = () => {
 
         {/* Popular Services Section */}
         <section className="mb-20">
-          <h3 className="text-3xl md:text-4xl font-bold text-center text-white mb-16 neon-text">
-            🔝 Popular Services Include:
+          <h3 className="text-2xl md:text-3xl font-bold text-center text-white mb-16 neon-text">
+            🔝 Servicios Populares Incluyen:
           </h3>
           <div className="grid lg:grid-cols-2 gap-10 max-w-7xl mx-auto">
             {[
@@ -76,9 +76,9 @@ const Index = () => {
                 icon: Instagram,
                 color: 'from-pink-500 to-purple-500',
                 services: [
-                  'Geo-Targeted Followers (EU, LATAM, BR...) – from $2.66 / 1K',
-                  'Instant Likes (with refill) – from $0.33 / 1K',
-                  'Views – from $0.003 / 1K'
+                  'Seguidores Geo-Localizados (EU, LATAM, BR...) – desde $2.66 / 1K',
+                  'Likes Instantáneos (con reposición) – desde $0.33 / 1K',
+                  'Visualizaciones – desde $0.003 / 1K'
                 ]
               },
               {
@@ -86,9 +86,9 @@ const Index = () => {
                 icon: Youtube,
                 color: 'from-red-500 to-red-600',
                 services: [
-                  'Ads Views (100% Organic) – $1.19 / 1K',
-                  'Watch-Time (5+ min) – from $9.75',
-                  'Subscribers – from $1.91'
+                  'Visualizaciones de Ads (100% Orgánicas) – $1.19 / 1K',
+                  'Tiempo de Reproducción (5+ min) – desde $9.75',
+                  'Suscriptores – desde $1.91'
                 ]
               },
               {
@@ -96,19 +96,19 @@ const Index = () => {
                 icon: MessageCircle,
                 color: 'from-black to-pink-500',
                 services: [
-                  'Followers – $1.63 / 1K',
-                  'Views (lifetime refill) – $0.001 / 1K',
-                  'Comments / Likes / Shares'
+                  'Seguidores – $1.63 / 1K',
+                  'Visualizaciones (reposición de por vida) – $0.001 / 1K',
+                  'Comentarios / Likes / Compartidos'
                 ]
               },
               {
-                platform: '📘 Facebook & More',
+                platform: '📘 Facebook y Más',
                 icon: Facebook,
                 color: 'from-blue-600 to-blue-800',
                 services: [
-                  'Page Likes – $2.60 / 1K',
-                  'Followers – from $0.75 / 1K',
-                  'Video Views – $0.002 / 1K'
+                  'Likes de Página – $2.60 / 1K',
+                  'Seguidores – desde $0.75 / 1K',
+                  'Visualizaciones de Video – $0.002 / 1K'
                 ]
               }
             ].map((platform, index) => (
@@ -117,11 +117,11 @@ const Index = () => {
                   <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${platform.color} flex items-center justify-center mr-5`}>
                     <platform.icon className="w-7 h-7 text-white" />
                   </div>
-                  <h4 className="text-2xl font-bold text-white">{platform.platform}</h4>
+                  <h4 className="text-xl font-bold text-white">{platform.platform}</h4>
                 </div>
                 <ul className="space-y-3">
                   {platform.services.map((service, idx) => (
-                    <li key={idx} className="text-gray-300 text-base">• {service}</li>
+                    <li key={idx} className="text-gray-300 text-sm">• {service}</li>
                   ))}
                 </ul>
               </Card>
@@ -129,23 +129,23 @@ const Index = () => {
           </div>
         </section>
 
-        {/* BHW Exclusive Offers */}
+        {/* ForoBeta Exclusive Offers */}
         <section className="mb-20">
-          <h3 className="text-3xl md:text-4xl font-bold text-center text-white mb-16 neon-text">
-            🎁 Exclusive BHW Perks
+          <h3 className="text-2xl md:text-3xl font-bold text-center text-white mb-16 neon-text">
+            🎁 Beneficios Exclusivos para ForoBeta
           </h3>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
-              { icon: Gift, title: '✅ $1 Test Balance', desc: 'Just register & comment your username', color: 'from-purple-500 to-pink-500' },
-              { icon: Plug, title: '✅ API Discounts for BHW Resellers', desc: 'Special pricing tiers for API users', color: 'from-green-500 to-emerald-600' },
-              { icon: Users, title: '✅ Bulk Pricing on request', desc: 'Volume discounts available', color: 'from-blue-500 to-cyan-500' }
+              { icon: Gift, title: '✅ Saldo de Prueba $1', desc: 'Solo regístrate y comenta tu nombre de usuario', color: 'from-purple-500 to-pink-500' },
+              { icon: Plug, title: '✅ Descuentos API para Revendedores FB', desc: 'Precios especiales para usuarios de API', color: 'from-green-500 to-emerald-600' },
+              { icon: Users, title: '✅ Precios al por Mayor bajo pedido', desc: 'Descuentos por volumen disponibles', color: 'from-blue-500 to-cyan-500' }
             ].map((offer, index) => (
               <Card key={index} className="bg-black/40 border-2 border-purple-500/30 p-8 text-center backdrop-blur-xl hover:border-pink-500/50 transition-all duration-300 group">
                 <div className={`w-18 h-18 mx-auto mb-5 rounded-2xl bg-gradient-to-br ${offer.color} flex items-center justify-center transform transition-all duration-300 group-hover:scale-110`}>
                   <offer.icon className="w-9 h-9 text-white" />
                 </div>
-                <h4 className="text-xl font-bold text-white mb-3">{offer.title}</h4>
-                <p className="text-gray-300 text-base">{offer.desc}</p>
+                <h4 className="text-lg font-bold text-white mb-3">{offer.title}</h4>
+                <p className="text-gray-300 text-sm">{offer.desc}</p>
               </Card>
             ))}
           </div>
@@ -153,29 +153,29 @@ const Index = () => {
 
         {/* Refund & Refill Policy */}
         <section className="mb-20">
-          <h3 className="text-3xl md:text-4xl font-bold text-center text-white mb-16 neon-text">
-            🛡️ Refund & Refill Policy
+          <h3 className="text-2xl md:text-3xl font-bold text-center text-white mb-16 neon-text">
+            🛡️ Política de Reembolso y Reposición
           </h3>
           <div className="max-w-5xl mx-auto">
             <Card className="bg-black/40 border-2 border-purple-500/30 p-10 backdrop-blur-xl mb-8">
               <div className="grid md:grid-cols-2 gap-8 mb-8">
                 <div>
-                  <h4 className="text-xl font-bold text-green-400 mb-6 flex items-center">
-                    <CheckCircle className="w-7 h-7 mr-3" /> What We Guarantee
+                  <h4 className="text-lg font-bold text-green-400 mb-6 flex items-center">
+                    <CheckCircle className="w-7 h-7 mr-3" /> Lo que Garantizamos
                   </h4>
-                  <ul className="space-y-3 text-gray-300 text-base">
-                    <li>✔ 100% refund to balance for undelivered orders</li>
-                    <li>✔ Refill on eligible services clearly labeled</li>
+                  <ul className="space-y-3 text-gray-300 text-sm">
+                    <li>✔ 100% reembolso al saldo por pedidos no entregados</li>
+                    <li>✔ Reposición en servicios elegibles claramente marcados</li>
                   </ul>
                 </div>
                 
                 <div>
-                  <h4 className="text-xl font-bold text-red-400 mb-6 flex items-center">
-                    <XCircle className="w-7 h-7 mr-3" /> Limitations
+                  <h4 className="text-lg font-bold text-red-400 mb-6 flex items-center">
+                    <XCircle className="w-7 h-7 mr-3" /> Limitaciones
                   </h4>
-                  <ul className="space-y-3 text-gray-300 text-base">
-                    <li>✖ No refunds on external wallets or mixed-panel orders</li>
-                    <li>⚠ Chargebacks = permanent ban</li>
+                  <ul className="space-y-3 text-gray-300 text-sm">
+                    <li>✖ Sin reembolsos a wallets externos o pedidos de paneles mixtos</li>
+                    <li>⚠ Chargebacks = ban permanente</li>
                   </ul>
                 </div>
               </div>
@@ -185,40 +185,40 @@ const Index = () => {
 
         {/* Payment Methods */}
         <section className="mb-20">
-          <h3 className="text-2xl md:text-3xl font-bold text-white text-center mb-12">💳 Payment Options</h3>
+          <h3 className="text-xl md:text-2xl font-bold text-white text-center mb-12">💳 Opciones de Pago</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
             {[
               'Crypto (BTC, ETH, USDT, BUSD)', 'Binance Pay', 'Payeer', 'Cryptomus', 'Coinpal', 'AirTM',
-              'Stripe', 'WebMoney', 'PayPal', 'Credit/Debit Cards', 'Wise', 'Payoneer',
+              'Stripe', 'WebMoney', 'PayPal', 'Tarjetas de Crédito/Débito', 'Wise', 'Payoneer',
               'Cashmaal', 'Coinbase', 'Uphold'
             ].map((payment) => (
               <div key={payment} className="bg-black/40 backdrop-blur-xl px-5 py-4 rounded-xl border border-purple-500/30 hover:border-pink-500/50 transition-all duration-300 text-center">
-                <span className="text-white font-semibold text-sm">{payment}</span>
+                <span className="text-white font-semibold text-xs">{payment}</span>
               </div>
             ))}
           </div>
           <div className="mt-8 text-center">
-            <p className="text-gray-400 text-base">
-              Bank Transfer (US, UK, EU, AU, CO, TR...)
+            <p className="text-gray-400 text-sm">
+              Transferencia Bancaria (US, UK, EU, AU, CO, TR...)
             </p>
           </div>
         </section>
 
         {/* Contact Section */}
         <section className="mb-20">
-          <h3 className="text-2xl md:text-3xl font-bold text-center text-white mb-12 neon-text">
-            📬 Contact Us
+          <h3 className="text-xl md:text-2xl font-bold text-center text-white mb-12 neon-text">
+            📬 Contáctanos
           </h3>
           <div className="text-center max-w-3xl mx-auto">
             <Card className="bg-black/40 border-2 border-purple-500/30 p-10 backdrop-blur-xl">
-              <div className="space-y-5 text-gray-300 text-base">
-                <p>🌐 Website: <span className="text-purple-400 font-semibold">https://1popularity.com</span></p>
-                <p>📩 Support via ticket: 18h/day</p>
+              <div className="space-y-5 text-gray-300 text-sm">
+                <p>🌐 Sitio Web: <span className="text-purple-400 font-semibold">https://1popularity.com</span></p>
+                <p>📩 Soporte por ticket: 18h/día</p>
                 <div className="border-t border-purple-500/30 pt-6 mt-8">
-                  <p className="text-white font-semibold mb-4 text-lg">Direct Contact:</p>
+                  <p className="text-white font-semibold mb-4 text-base">Contacto Directo:</p>
                   <div className="space-y-3">
                     <p>✈️ Telegram: <span className="text-blue-400 font-semibold">@popularity1</span></p>
-                    <p>📱 WhatsApp (Text only): <span className="text-green-400 font-semibold">+57 300 636 1659</span></p>
+                    <p>📱 WhatsApp (Solo texto): <span className="text-green-400 font-semibold">+57 300 636 1659</span></p>
                     <p>📷 Instagram: <span className="text-pink-400 font-semibold">@1popularityzz</span></p>
                   </div>
                 </div>
@@ -229,26 +229,26 @@ const Index = () => {
 
         {/* Call to Action */}
         <section className="text-center mb-20">
-          <h3 className="text-2xl md:text-3xl font-bold text-white mb-8 neon-text">
-            🌟 Start Scaling Your Brand or Reseller Business Today
+          <h3 className="text-xl md:text-2xl font-bold text-white mb-8 neon-text">
+            🌟 Comienza a Escalar tu Marca o Negocio de Reventa Hoy
           </h3>
-          <p className="text-lg text-gray-300 mb-10">
-            Join hundreds of agencies already growing with 1Popularity.com
+          <p className="text-base text-gray-300 mb-10">
+            Únete a cientos de agencias que ya están creciendo con 1Popularity.com
           </p>
-          <Button className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 hover:from-purple-700 hover:via-pink-700 hover:to-blue-700 text-white text-xl px-16 py-8 rounded-2xl font-bold transform transition-all duration-300 hover:scale-105 neon-border border-2 border-purple-500 group shadow-2xl">
-            Start Growing Now
+          <Button className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 hover:from-purple-700 hover:via-pink-700 hover:to-blue-700 text-white text-lg px-16 py-8 rounded-2xl font-bold transform transition-all duration-300 hover:scale-105 neon-border border-2 border-purple-500 group shadow-2xl">
+            Empezar a Crecer Ahora
             <ArrowRight className="w-8 h-8 ml-4 group-hover:translate-x-2 transition-transform" />
           </Button>
         </section>
 
         {/* Footer */}
         <footer className="text-center border-t border-purple-500/30 pt-10">
-          <p className="text-gray-400 text-lg">
-            © 2025 1popularity.com - Premium SMM Panel
+          <p className="text-gray-400 text-base">
+            © 2025 1popularity.com - Panel SMM Premium
           </p>
-          <p className="text-gray-500 text-base mt-3">
+          <p className="text-gray-500 text-sm mt-3">
             <a href="#" className="hover:text-purple-400 transition-colors underline">
-              Terms & Conditions
+              Términos y Condiciones
             </a>
           </p>
         </footer>
